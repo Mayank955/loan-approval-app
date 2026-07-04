@@ -2,7 +2,7 @@ import joblib
 import streamlit as s
 
 model = joblib.load("loan_model.pkl")
-s.title(":blue[Loan Approval Predictor:]")
+s.title(":blue[Loan Approval Predictor :]")
 
 income = s.slider("Income : ", 20000, 100000)
 credit_score = s.slider("Credit Score : ", 300, 850)
